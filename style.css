@@ -1,0 +1,187 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: white;
+}
+
+body {
+   font-family: 'Red Hat Display', sans-serif;
+   font-size: 20px;
+   background-image: url("images/bg2.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+nav {
+   background: #222;
+   padding: 0 15px;
+   color: white;
+   border: #76BDA6 solid 2px;
+}
+
+li {
+   list-style: none;
+}
+
+hr {
+   width: 8px;
+   background-color: #B0B6B5;
+}
+
+.nav {
+   display: flex; 
+   flex-wrap: wrap;
+   justify-content: space-around;
+   list-style: none;
+}
+
+.nav a {
+   text-decoration: none;
+   color: white;
+}
+
+.nav a:hover {
+   color: #63CBAA;
+   transition: 0.3s;
+}
+
+.title {
+   position: absolute;
+   top : 45%;
+   left: 45%;
+   color: #8CFFDB;
+}
+
+/* Page avantages/inconvénients */
+
+.marks {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin: 10px;  
+}
+
+.marks p {
+   text-align: center;
+}
+
+.progressbar {
+   background: #333;
+   border-radius: 13px;
+   height: 20px;
+   width: 300px;
+   padding: 3px;
+}
+
+.progressbar:after {
+   content: '';
+   display: block;
+   background: #76BDA6;
+   width: 80%;
+   height: 100%;
+   border-radius: 9px;
+}
+
+.progressbara {
+   background: #333;
+   border-radius: 13px;
+   height: 20px;
+   width: 300px;
+   padding: 3px;
+}
+
+.progressbara:after {
+   content: '';
+   display: block;
+   background: #76BDA6;
+   width: 60%;
+   height: 100%;
+   border-radius: 9px;
+}
+
+.split {
+   margin: 50px;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.title2 {
+   margin: 20px 20px 20px 0;
+}
+
+/* Page caractéristiques */
+
+.mainc p{
+   margin: 1vw;
+   text-align: justify;
+}
+
+.mainc h2 {
+   text-align: center;
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+ }
+ 
+.column {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 100%;
+   flex: 1;
+   border: 2px solid white;
+}
+
+.column h3 {
+   text-align: center;
+}
+
+ /* Pages application  */
+
+.mainapp h2, .mainapp ul, .mainapp p{
+   margin: 2vw;
+}
+
+.mainapp h2{
+   text-align: center;
+}
+
+.border {
+   border: 2px solid white;
+   border-radius: 5px;
+   box-shadow: 10px 5px 5px #76BDA6;
+}
+
+/* Pour portable  */
+
+@media screen and (max-width: 800px) {
+   body {
+      font-size: 17px;
+   }
+
+   .progressbar, .progressbara {
+      margin: 20px;
+   }
+
+   .split {
+      justify-content: unset;
+   }
+
+   .split h2 {
+      text-align: center;
+   }
+
+   .divider {
+      display: none;
+   }
+
+   .remove {
+      display: none;
+   }
+}
